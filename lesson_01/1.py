@@ -1,10 +1,13 @@
-#MRO
+# MRO
+
 
 class A:
     pass
 
-class B (A):
+
+class B(A):
     pass
 
-class D (B,A):
+
+class D(B, A):
     pass
