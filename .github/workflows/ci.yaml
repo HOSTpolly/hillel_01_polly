@@ -4,7 +4,7 @@ on: [pull_request]
 
 jobs:
   code quality:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 
@@ -13,7 +13,7 @@ jobs:
         python-version: '3.11'
     - name: Install dependencies
       run: pip install flake8 black isort
-    - name: run linter
+    - name: Run linter
       run: flake8 .
     - name: run formatters
       run: black -t py311 --check . && isort --check .
