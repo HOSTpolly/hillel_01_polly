@@ -4,11 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+requests= "~=2.31"
 
 [dev-packages]
 black = "=~23.7"
 isort = "=~5.12"
 flake8 = "=~6.1"
-
+ipdb= "*"
+pympler= "~=1.0"
 [requires]
 python_version = "3.11"
