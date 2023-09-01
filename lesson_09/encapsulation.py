@@ -18,8 +18,6 @@ from typing import Any
 # FUNC LOGIN (DATA)
 
 
-
-
 class User:
     def __init__(self, username: str, password: str):
         self.username: str = username
@@ -76,4 +74,3 @@ def login(username: str, password: str):
 
 
 login("john", "12345")
-                    
