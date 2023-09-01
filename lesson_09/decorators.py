@@ -1,10 +1,10 @@
 def staticmethod(func):
     def inner(*args, **kwargs):
         if "self" in args:
-            args = args[:args.index("self")] + args[args.index("self")+1:]
+            args = args[: args.index("self")] + args[args.index("self") + 1:]
         return func(*args, **kwargs)
-    return inner
 
+    return inner
 
 
 class InternetShop:
@@ -32,6 +32,7 @@ class InternetShop:
     def buy(self, product: dict):
         # self.login(self.user....)
         pass
+
 
 zara = InternetShop()
 bershka = InternetShop()
