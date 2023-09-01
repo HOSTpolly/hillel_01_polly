@@ -30,7 +30,7 @@ class User:
         return super().__getattribute__(name)
 
     def login(self, entered_login: str, entered_password: str) -> None:
-        if entered_login == self.username and entered_password == self._password:
+        if entered_login == self.username & entered_password == self._password:
             self._authorized = True
         else:
             self._authorized = False
