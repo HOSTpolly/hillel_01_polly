@@ -19,7 +19,7 @@ class Vector:
 
     def __str__(self) -> str:
         return (
-            f"Vector ({self.start[0]},{self.start[1]}); ({self.end[0]},{self.end[1]})"
+                f"Vector({self.start[0]},{self.start[1]}); ({self.end[0]},{self.end[1]})"
         )
 
 
