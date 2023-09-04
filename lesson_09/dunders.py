@@ -35,8 +35,7 @@ class UsersFactory:
 
     def _init_users(self):
         self._users = {
-            name.lower(): User(name=name, password=self.random_password)
-            for name in self._names
+            name.lower(): User(name=name, password=self.random_password) for name in self._names
         }
 
     def __getitem__(self, key: str):
