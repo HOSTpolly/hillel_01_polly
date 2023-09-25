@@ -31,7 +31,7 @@ class PaymentSystem:
     #     return super().__getattribute__(name)
 
     def get_atr(self, name: str) -> Any:
-        if not name in self.__dict__keys():
+        if name not in self.__dict__keys():
             raise AttributeError(f"Your class does not have this field:{name}")
         return super().__getattribute__(name)
 

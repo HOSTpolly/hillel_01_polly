@@ -7,20 +7,12 @@ def reverse_string(func):
     @functools.wraps(func)
     def wrapper(*args, **kwargs):
         string = func(*args, **kwargs)
-        # isinstance(object, type)
 
         if isinstance(string, str):
-
-        # The isinstance() function returns True if the specified object is of the specified type,
-        # otherwise False.
-
             reversed_string = string[::-1]
-
-            # start from the end of the string and move backward by one character at a time
-            # until the beginning of the string is reached.
             return reversed_string
         else:
-            return None  # Return None if the result is False
+            return None
     return wrapper
 
 

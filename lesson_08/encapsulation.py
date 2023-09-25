@@ -23,7 +23,7 @@ class PaymentSystem:
 
         try:
             ALLOWED.remove(name)
-        except:
+        except Exception:
             pass
 
         return object.__getattribute__(self, name)
