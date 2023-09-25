@@ -1,6 +1,6 @@
 name: code quality
 
-on: [pull_request]
+on: [push]
 
 jobs:
   code quality:
