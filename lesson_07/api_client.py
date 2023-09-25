@@ -1,4 +1,5 @@
 from typing import Generic, TypeVar
+
 import requests
 
 # response = requests.get("https://pokeapi.co/api/v2/pokemon/12")
@@ -74,10 +75,6 @@ with ApiClientContext(base_url="https://pokeapi.co/api/v2") as client:
 
 
 async def foo():
-    async with ApiClientContext(
-        base_url="https://pokeapi.co/api/v2"
-    ) as client:
-        ditto_data = await client.get_response(
-            method="get", endpoint="/pokemon/dittoss"
-        )
+    async with ApiClientContext(base_url="https://pokeapi.co/api/v2") as client:
+        ditto_data = await client.get_response(method="get", endpoint="/pokemon/dittoss")
         print(f"Fetched pokemon: {ditto_data['name']}")

@@ -13,11 +13,13 @@ def reverse_string(func):
             return reversed_string
         else:
             return None
+
     return wrapper
 
 
 def mask_data(target_key):
     """Replace the value of specific keys in a dictionary with a 'masked' version."""
+
     def decorator(func):
         @functools.wraps(func)
         def wrapper(*args, **kwargs):

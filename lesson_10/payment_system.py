@@ -41,9 +41,7 @@ def make_purchace(
     product: Product,
     user: User,
 ):
-    print(
-        f"{user.name} making a purchace - {product.name} for {product.price} UAH"
-    )
+    print(f"{user.name} making a purchace - {product.name} for {product.price} UAH")
     payment_system.checkout(product=product, user=user)
 
 

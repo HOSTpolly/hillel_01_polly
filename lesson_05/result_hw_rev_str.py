@@ -13,8 +13,4 @@ def get_university_founding_year() -> int:
 
 
 # TEST OUPUT
-print(
-  get_university_name(),
-  get_university_founding_year(),
-  sep="\n"
-)
+print(get_university_name(), get_university_founding_year(), sep="\n")

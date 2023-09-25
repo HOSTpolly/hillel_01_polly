@@ -1,8 +1,7 @@
 # Functions
 
 
-from decorators import do_twice
-from decorators import timer
+from decorators import do_twice, timer
 
 
 def add_one(number):
@@ -57,6 +56,7 @@ def parent(num):
 
     def second_child():
         return "Call me Liam"
+
     if num == 1:
         return first_child
     else:
@@ -82,11 +82,14 @@ def my_decorator(func):
         print("Something is happening before the function is called.")
         func()
         print("Something is happening after the function is called.")
+
     return wrapper
 
 
 def say_whee():
     print("Whee!")
+
+
 # По суті, назва say_whee тепер вказує на wrapper()-внутрішню функцію.
 # повертає wrapper як функцію, коли викликає my_decorator(say_whee):
 
@@ -125,6 +128,7 @@ def my_decorator_1(func):
         print("Something is happening before the function is called.")
         func()
         print("Something is happening after the function is called.")
+
     return wrapper_1
 
 

@@ -12,7 +12,7 @@ class Circle:
         self.radius = radius
 
     def calculate_area(self) -> float:
-        return pi * self.radius ** 2
+        return pi * self.radius**2
 
 
 class Square:
@@ -20,7 +20,7 @@ class Square:
         self.side = side
 
     def calculate_area(self) -> float:
-        return self.side ** 2
+        return self.side**2
 
 
 class Diamond:

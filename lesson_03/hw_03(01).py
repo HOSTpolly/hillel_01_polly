@@ -18,11 +18,7 @@ while True:
                 counter += 1
                 print("This line: " f"{line}" "contains the word 'user' ")
 
-                print(
-                    "Do you want to add this word: "
-                    f"{line}"
-                    " to your password_list ?"
-                )
+                print("Do you want to add this word: " f"{line}" " to your password_list ?")
 
                 print(" Please, enter your desision:")
 

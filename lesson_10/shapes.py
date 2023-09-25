@@ -1,6 +1,6 @@
 from inspect import signature
-from typing import Protocol
 from math import pi
+from typing import Protocol
 
 
 class CanCalculateArea(Protocol):
@@ -14,6 +14,7 @@ class Circle:
 
     def calculate_area(self) -> float:
         return pi * self.radius**2
+
 
 # Square.__init__(c1, 4).
 # Square.calculate_area(c1).
@@ -41,9 +42,7 @@ class Diamond:
 
 
 class Validator:
-    def validate_shape(
-        self, shape: CanCalculateArea, max_limit: float
-    ) -> CanCalculateArea:
+    def validate_shape(self, shape: CanCalculateArea, max_limit: float) -> CanCalculateArea:
         if shape.calculate_area() > max_limit:
             raise ValueError("The area is too big")
 

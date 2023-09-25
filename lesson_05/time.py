@@ -1,5 +1,5 @@
-from functools import lru_cache
 import time
+from functools import lru_cache
 
 
 def fib_without_cache(n):

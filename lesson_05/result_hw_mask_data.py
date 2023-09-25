@@ -6,6 +6,8 @@ from hw_05 import mask_data
 @mask_data(target_key=["name"])
 def get_user(name: str, age: int):
     return {"name": name, "age": age}
+
+
 # @mask_data(target_key=["name","age"])
 # def get_user(name: str, age: int):
 #   return {
