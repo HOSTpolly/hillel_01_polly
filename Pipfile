@@ -4,14 +4,18 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-requests= "~=2.31"
+push7 ="~= 0.0.6"
+httpx = "*"
+aiohttp = "*"
 
 [dev-packages]
-black = "=~23.7"
-isort = "=~5.12"
-flake8 = "=~6.1"
-ipdb= "*"
-pympler= "~=1.0"
+black = "~=23.7"
+flake8 = "~=6.1"
+isort = "~=5.12"
+ipdb = "*"
+pympler = "~=1.0"
+mypy = "~=1.5"
+grequests = "*"
 
 [requires]
 python_version = "3.11"
