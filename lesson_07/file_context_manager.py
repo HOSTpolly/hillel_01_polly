@@ -1,5 +1,4 @@
 filename = "names.txt"
-
 with open(filename, mode="r") as file:
     lines = file.readlines()
 
@@ -40,8 +39,7 @@ class open:
             self._file_mode_instance = FileWriter(self._filename)
         else:
             raise NotImplementedError
-
         return self._file_mode_instance
-    
+
     def __exit__(self, *args, **kwargs):
         self._file_mode_instance.close()
