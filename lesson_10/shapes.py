@@ -18,6 +18,7 @@ class Circle:
 # Square.__init__(c1, 4).
 # Square.calculate_area(c1).
 
+
 class Square:
     def __init__(self, side: int) -> None:
         self.name = "John"

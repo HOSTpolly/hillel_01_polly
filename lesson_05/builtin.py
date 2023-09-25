@@ -1,4 +1,5 @@
 from pprint import pprint as print
+from itertools import zip_longest
 
 
 class Person:
@@ -94,15 +95,11 @@ def foo():
 
 
 # print(help(foo))
-
-from itertools import zip_longest
-
 names = ["John", "Marry", "Jack"]
 ages = [20, 30, 40, 50]
 
 # for index, name in enumerate(names):
 #     print(f"{name=}, age={ages[index]}")
-
 # for name, age in zip(names, ages):
 #     print(f"{name=}, {age=}")
 

@@ -1,5 +1,6 @@
 from hw_06 import mask_data
 
+
 # TARGET FUNCTIONS
 @mask_data(target_key="name")
 def get_user(name: str, age: int):

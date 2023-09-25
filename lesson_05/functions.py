@@ -5,11 +5,7 @@ def foo():
 
 # data1, data2,data3,data4,data5 = foo()
 data = foo()
-
-
 # print(data)
-
-
 contact_info = ("John", "Doe", "Kyiv", "33111", "+3801222234", "man", 40)
 # name, surname, city, postal_code, phone_number, sex, age = contact_info
 name, surname, *_, age = contact_info

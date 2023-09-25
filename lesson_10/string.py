@@ -2,7 +2,7 @@ from typing import Any
 
 
 message = """I load it in python using cPickle.
-I tried to ascertain its size using pympler asizeof. 
+I tried to ascertain its size using pympler asizeof.
 But there is a considerable difference size given by asize of and sys.getsizeof
 """
 

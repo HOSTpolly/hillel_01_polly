@@ -8,15 +8,13 @@ import time
 #         func()
 #     return wrapper_do_twice
 
-# 
-# 
-# 
 
 # def do_twice(func):
 #     def wrapper_do_twice(*args, **kwargs):
 #         func(*args, **kwargs)
 #         func(*args, **kwargs)
 #     return wrapper_do_twice
+
 
 # def do_twice(func):
 #     def wrapper_do_twice(*args, **kwargs):
@@ -25,15 +23,12 @@ import time
 #     return wrapper_do_twice
 
 
-
-
 def do_twice(func):
     @functools.wraps(func)
     def wrapper_do_twice(*args, **kwargs):
         func(*args, **kwargs)
         return func(*args, **kwargs)
     return wrapper_do_twice
-
 
 
 def timer(func):
@@ -47,4 +42,3 @@ def timer(func):
         print(f"Finished {func.__name__!r} in {run_time:.4f} secs")
         return value
     return wrapper_timer
-
