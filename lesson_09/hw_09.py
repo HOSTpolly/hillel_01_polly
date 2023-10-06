@@ -6,6 +6,22 @@ class Price:
         self.amount: int = amount
         self.currency: str = currency
 
+    @property
+    def amount(self):
+        return self._amount
+
+    @amount.setter
+    def amount(self, value):
+        self._amount = value
+
+    @property
+    def currency(self):
+        return self._currency
+
+    @currency.setter
+    def currency(self, value):
+        self._currency = value
+
     def convert_to_usd(self):
         if self.currency == "USD":
             return self.amount
