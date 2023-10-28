@@ -58,7 +58,7 @@ salad = Dish(
 
 dishes = [pizza, salad]
 
-# regular execution
+# # regular execution
 # for dish in dishes:
 #     Kitchen.cook(dish)
 
@@ -77,6 +77,8 @@ dishes = [pizza, salad]
 # for thread in threads:
 #     thread.join()
 
+# print("All threads are finished")
+
 # processes
 tasks = [Process(target=Kitchen.cook, args=[dish]) for dish in dishes]
 
@@ -85,3 +87,4 @@ for task in tasks:
 
 for task in tasks:
     task.join()
+print("All process are finished")
