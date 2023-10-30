@@ -1,7 +1,7 @@
 def staticmethod(func):
     def inner(*args, **kwargs):
         if "self" in args:
-            args = args[: args.index("self")] + args[args.index("self") + 1:]
+            args = args[: args.index("self")] + args[args.index("self") + 1 :]
         return func(*args, **kwargs)
 
     return inner
