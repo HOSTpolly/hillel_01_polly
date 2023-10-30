@@ -1,7 +1,7 @@
 # Functions
 
 
-from decorators import do_twice, timer
+from lesson_09.decorators import do_twice, timer
 
 
 def add_one(number):
